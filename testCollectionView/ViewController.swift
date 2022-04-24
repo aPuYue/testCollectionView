@@ -38,6 +38,14 @@ extension ViewController : UICollectionViewDataSource, UICollectionViewDelegate 
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 100 //2个item间距
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 500, height: 500)
+    }
+    
     
 }
 
